@@ -29,45 +29,49 @@ export function ImageViewer({ images, open, onOpenChange }: ImageViewerProps) {
         showCloseButton={false}
       >
         <DialogTitle className="sr-only">Image Gallery</DialogTitle>
-        <button
+      
+        <div className="w-screen h-screen flex items-center justify-center">
+       
+          <div className="relative max-w-[95vw] max-h-[95vh]">
+          <button
           onClick={() => onOpenChange(false)}
           className="fixed right-6 top-6 z-50 text-white/70 hover:text-white transition-colors"
         >
-          <X className="h-8 w-8" />
+          <X className="h-8 w-8 right-6" />
         </button>
-        <div className="w-screen h-screen flex items-center justify-center">
-          <img
-            src={images[currentIndex].src}
-            alt={images[currentIndex].alt}
-            className="max-w-[95vw] max-h-[95vh] w-auto h-auto object-contain"
-          />
-          {images.length > 1 && (
-            <>
-              <button
-                onClick={previousImage}
-                className="fixed left-6 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white/70 hover:text-white transition-colors"
-              >
-                <ChevronLeft className="h-8 w-8" />
-              </button>
-              <button
-                onClick={nextImage}
-                className="fixed right-6 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-full text-white/70 hover:text-white transition-colors"
-              >
-                <ChevronRight className="h-8 w-8" />
-              </button>
-              <div className="fixed bottom-6 left-1/2 -translate-x-1/2 flex gap-2">
-                {images.map((_, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setCurrentIndex(index)}
-                    className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentIndex ? "bg-white" : "bg-white/30"
-                    }`}
-                  />
-                ))}
-              </div>
-            </>
-          )}
+            <img
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
+              className="w-auto h-auto max-w-full max-h-full object-contain"
+            />
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={previousImage}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-[150%] bg-black/50 p-3 rounded-full text-white/70 hover:text-white transition-colors"
+                >
+                  <ChevronLeft className="h-8 w-8" />
+                </button>
+                <button
+                  onClick={nextImage}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-[150%] bg-black/50 p-3 rounded-full text-white/70 hover:text-white transition-colors"
+                >
+                  <ChevronRight className="h-8 w-8" />
+                </button>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[200%] flex gap-2">
+                  {images.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentIndex(index)}
+                      className={`w-2 h-2 rounded-full transition-colors ${
+                        index === currentIndex ? "bg-white" : "bg-white/30"
+                      }`}
+                    />
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
         </div>
       </DialogContent>
     </Dialog>
