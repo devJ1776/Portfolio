@@ -30,15 +30,15 @@ export function ImageViewer({ images, open, onOpenChange }: ImageViewerProps) {
       >
         <DialogTitle className="sr-only">Image Gallery</DialogTitle>
       
-        <div className="w-screen h-screen flex items-center justify-center">
-       
-          <div className="relative max-w-[95vw] max-h-[95vh]">
-          <button
+        <div className="w-screen h-screen flex items-center justify-center relative">
+        <button
           onClick={() => onOpenChange(false)}
-          className="fixed right-6 top-6 z-50 text-white/70 hover:text-white transition-colors"
+          className="absolute right-6 top-6 z-50 text-white/70 hover:text-white transition-colors"
         >
-          <X className="h-8 w-8 right-6" />
+          <X className="h-8 w-8" />
         </button>
+          <div className="relative max-w-[95vw] max-h-[95vh]">
+         
             <img
               src={images[currentIndex].src}
               alt={images[currentIndex].alt}

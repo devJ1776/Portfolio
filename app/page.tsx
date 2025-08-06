@@ -93,12 +93,26 @@ export default function Home() {
                 index={3}
               />
 
+               <ProjectItem
+                   title="TIRE APPOINTMENTS"
+                   company="ACTIVE DEVELOPMENT"
+                   description="Built a comprehensive tire service appointment scheduler that integrates with government vehicle databases. Features include real-time vehicle lookup, service selection, and a fully functional backend appointment management system."
+                   link="https://tireappointments.netlify.app/"
+                   tags={[".GOV API Integration", "Web Developer"]}
+                   index={4}
+                />
+
               <ProjectItem
                 title="ISD CAMPAIGNS"
                 company="LANGRAND AND COMPANY"
                 description="Developed and implemented for various school districts within the Greater Houston area, including Katy ISD, Aldine ISD, and Houston ISD. Built a reporting metrics tool to help establish insights and metrics for the districts' internal marketing campaigns."
                 tags={["Data Reporting & Analytics", "Web Developer"]}
-                index={4}
+                images={[
+                  { src: "/isd00.jpg", alt: "ISD Campaigns Internal" },
+                  { src: "/isd01.jpg", alt: "ISD Campaigns Internal" },
+                  { src: "/isd02.jpg", alt: "ISD Campaigns Internal" }
+                ]}
+                index={5}
               />
 
               <ProjectItem
@@ -110,7 +124,7 @@ export default function Home() {
                 images={[
                   { src: "/bcbs-anthem00.jpg", alt: "BCBS Anthem Welcome Kit - Overview" },
                   { src: "/bcbs-anthem01.jpg", alt: "BCBS Anthem Welcome Kit - Details" },
-                  { src: "/healthcare-welcome-kit.png", alt: "BCBS Anthem Welcome Kit - Full View" }
+                  { src: "/bcbs-blueshop.jpg", alt: "BCBS Anthem Welcome Kit - Full View" }
                 ]}
               />
 
@@ -119,7 +133,7 @@ export default function Home() {
                 company="CUDD ENERGY SERVICES"
                 description="Designed and built a UI framework of reusable components shared across all enterprise applications. Created a comprehensive component library for consistent user experiences."
                 tags={["Enterprise Component Library", "Web Developer"]}
-                index={7}
+                index={6}
               />
 
               <ProjectItem
@@ -128,7 +142,7 @@ export default function Home() {
                 description="Custom dashboards and BI charting info for fleet management. Developed interactive data visualization tools for real-time monitoring and analytics."
                 link="https://cuddondemand.com/auth/login"
                 tags={["Enterprise Data Visualization", "Web Developer"]}
-                index={8}
+                index={7}
               />
 
               <ProjectItem
@@ -136,8 +150,8 @@ export default function Home() {
                 company="ULTIMATE SOLUTIONS"
                 description="Collaborated with a 3D Artist to oversee development and design of 3D graphics establishing a 'high tech' look and feel for an oil & gas industry company. Created website, videos, and 3D art while protecting proprietary technology."
                 link="https://ultimatesolutions-inc.com"
-                tags={["Oil & Gas", "3D Art Direction"]}
-                index={9}
+                tags={["Oil & Gas", "Art Direction"]}
+                index={8}
               />
 
             </div>
