@@ -10,7 +10,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-black text-white">
       {/* Header/Navigation */}
       <header className="fixed top-0 z-40 w-full">
-        <div className="container flex h-20 items-center justify-between">
+        <div className="container mx-auto max-w-6xl px-4 flex h-20 items-center justify-between">
           <Link href="/" className="text-xl font-bold tracking-tighter">
             JARRED TRAPP
           </Link>
@@ -62,9 +62,19 @@ export default function Home() {
 
         {/* Work Section */}
         <section id="work" className="py-32">
-          <div className="container">
+          <div className="container mx-auto max-w-6xl px-4">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-16">SELECTED WORK</h2>
             <div className="space-y-32">
+
+              <ProjectItem
+                  title="PARKER'S LIST"
+                  company="PARKER'S LIST"
+                  description="Connecting families with autism-friendly resources, services, and support in your community. Built a comprehensive directory platform with categorized listings and user-friendly navigation."
+                  link="https://parkerslist.com/"
+                  tags={["Google Maps API Integration", "Web Developer"]}
+                  index={1}
+                />
+
               <ProjectItem
                 title="KARST & VON OISTE"
                 company="KARST & VON OISTE, LLP"
@@ -84,15 +94,6 @@ export default function Home() {
               />
 
               <ProjectItem
-                title="PARKER'S LIST"
-                company="PARKER'S LIST"
-                description="Connecting families with autism-friendly resources, services, and support in your community. Built a comprehensive directory platform with categorized listings and user-friendly navigation."
-                link="https://parkerslist.com/"
-                tags={["Google Maps API Integration", "Web Developer"]}
-                index={2}
-              />
-
-              <ProjectItem
                 title="ISD CAMPAIGNS"
                 company="LANGRAND AND COMPANY"
                 description="Developed and implemented for various school districts within the Greater Houston area, including Katy ISD, Aldine ISD, and Houston ISD. Built a reporting metrics tool to help establish insights and metrics for the districts' internal marketing campaigns."
@@ -106,14 +107,6 @@ export default function Home() {
                 description="Created a rapid prototype for the Blue Cross/Blue Shield Welcome Kit to establish a friendlier onboarding process and clarify insurance plan details. Provided much-needed sense of security and consumer confidence."
                 tags={["Microsite", "Web Developer"]}
                 index={5}
-              />
-
-              <ProjectItem
-                title="HARRIS HEALTH LMS"
-                company="HARRIS HEALTH SYSTEMS"
-                description="Provided web development support for a proprietary LMS training project that had stalled. Coordinated with IT and senior management to deliver a working product, tested and deployed for training usage within one week."
-                tags={["LMS Development", "Web Developer"]}
-                index={6}
               />
 
               <ProjectItem
@@ -137,25 +130,18 @@ export default function Home() {
                 title="ULTIMATE SOLUTIONS"
                 company="ULTIMATE SOLUTIONS"
                 description="Collaborated with a 3D Artist to oversee development and design of 3D graphics establishing a 'high tech' look and feel for an oil & gas industry company. Created website, videos, and 3D art while protecting proprietary technology."
-                link="www.ultimatesolutions-inc.com"
+                link="https://ultimatesolutions-inc.com"
                 tags={["Oil & Gas", "Designer & Developer"]}
                 index={9}
               />
 
-              <ProjectItem
-                title="MATT SCHAUB"
-                company="PERSONAL PROJECT"
-                description="Designed and created a website for NFL Quarterback Matt Schaub to serve as his personal website while he was with the Houston Texans. Created the logo icon that serves as his brand identity."
-                tags={["Pro Athlete Website", "Designer & Developer"]}
-                index={10}
-              />
             </div>
           </div>
         </section>
 
         {/* About Section */}
         <section id="about" className="py-32 bg-zinc-900">
-          <div className="container">
+          <div className="container mx-auto max-w-6xl px-4">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-16">ABOUT</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div className="space-y-6">
@@ -212,7 +198,7 @@ export default function Home() {
 
         {/* Contact Section */}
         <section id="contact" className="py-32">
-          <div className="container">
+          <div className="container mx-auto max-w-6xl px-4">
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-16">GET IN TOUCH</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
               <div>
@@ -274,7 +260,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 border-t border-zinc-800">
-        <div className="container flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="container mx-auto max-w-6xl px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">© {new Date().getFullYear()} Jarred Trapp. All rights reserved.</p>
           <p className="text-sm text-gray-500">UI Developer & Designer</p>
         </div>
