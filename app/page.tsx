@@ -181,7 +181,7 @@ export default function Home() {
                   </p>
                   <p className="text-xl text-gray-300">
                     With a background in both design and development, I bring a unique perspective to projects, ensuring
-                    they're not only functional but also visually appealing and a user-friendly experience.
+                    they're not only functional but also visually appealing and have a user-friendly experience.
                   </p>
                 </div>
               
