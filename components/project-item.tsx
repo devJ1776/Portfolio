@@ -1,5 +1,7 @@
+import { useState } from "react"
 import Link from "next/link"
-import { ArrowUpRight } from "lucide-react"
+import { ArrowUpRight, Images } from "lucide-react"
+import { ImageViewer } from "@/components/image-viewer"
 
 interface ProjectItemProps {
   title: string
@@ -8,9 +10,11 @@ interface ProjectItemProps {
   link?: string
   tags: string[]
   index: number
+  images?: { src: string; alt: string }[]
 }
 
-export function ProjectItem({ title, company, description, link, tags, index }: ProjectItemProps) {
+export function ProjectItem({ title, company, description, link, tags, index, images }: ProjectItemProps) {
+  const [isGalleryOpen, setIsGalleryOpen] = useState(false)
   return (
     <div className="group">
       <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-start">
@@ -28,16 +32,27 @@ export function ProjectItem({ title, company, description, link, tags, index }: 
               </span>
             ))}
           </div>
-          {link && (
-            <Link
-              href={link.startsWith("http") ? link : `https://${link}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center text-lg hover:text-gray-400 transition-colors mt-4"
-            >
-              Visit Project <ArrowUpRight className="ml-2 h-5 w-5" />
-            </Link>
-          )}
+          <div className="flex gap-4 mt-4">
+            {link && (
+              <Link
+                href={link.startsWith("http") ? link : `https://${link}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-lg hover:text-gray-400 transition-colors"
+              >
+                Visit Project <ArrowUpRight className="ml-2 h-5 w-5" />
+              </Link>
+            )}
+            {images && images.length > 0 && (
+              <button
+                onClick={() => setIsGalleryOpen(true)}
+                className="inline-flex items-center text-lg hover:text-gray-400 transition-colors"
+              >
+                View Gallery <Images className="ml-2 h-5 w-5" />
+              </button>
+            )}
+          </div>
+          {images && <ImageViewer images={images} open={isGalleryOpen} onOpenChange={setIsGalleryOpen} />}
         </div>
         <div className="w-full md:w-1/3 aspect-[4/3] bg-zinc-900 overflow-hidden">
           {title === "KARST & VON OISTE" ? (
@@ -90,11 +105,11 @@ export function ProjectItem({ title, company, description, link, tags, index }: 
             />
           ) : title === "ULTIMATE SOLUTIONS" ? (
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ultimate-01.jpg-nfr2fe4jdLzkKPtR9Yyq5qQXdmneD2.jpeg"
+              src="/ultimate-solutions.jpg"
               alt={title}
               className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
             />
-          ) : title === "MATT SCHAUB WEBSITE" ? (
+          ) : title === "MATT SCHAUB" ? (
             <img
               src="/matt-schaub.jpg"
               alt={title}

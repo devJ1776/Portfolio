@@ -107,6 +107,11 @@ export default function Home() {
                 description="Created a rapid prototype for the Blue Cross/Blue Shield Welcome Kit to establish a friendlier onboarding process and clarify insurance plan details. Provided much-needed sense of security and consumer confidence."
                 tags={["Microsite", "Web Developer"]}
                 index={5}
+                images={[
+                  { src: "/bcbs-anthem00.jpg", alt: "BCBS Anthem Welcome Kit - Overview" },
+                  { src: "/bcbs-anthem01.jpg", alt: "BCBS Anthem Welcome Kit - Details" },
+                  { src: "/healthcare-welcome-kit.png", alt: "BCBS Anthem Welcome Kit - Full View" }
+                ]}
               />
 
               <ProjectItem
@@ -131,7 +136,7 @@ export default function Home() {
                 company="ULTIMATE SOLUTIONS"
                 description="Collaborated with a 3D Artist to oversee development and design of 3D graphics establishing a 'high tech' look and feel for an oil & gas industry company. Created website, videos, and 3D art while protecting proprietary technology."
                 link="https://ultimatesolutions-inc.com"
-                tags={["Oil & Gas", "Designer & Developer"]}
+                tags={["Oil & Gas", "3D Art Direction"]}
                 index={9}
               />
 
