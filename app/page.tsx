@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
       {/* Header/Navigation */}
-      <header className="fixed top-0 z-40 w-full">
-        <div className="container mx-auto max-w-6xl px-4 flex h-20 items-center justify-between">
-          <Link href="/" className="text-xl font-bold tracking-tighter">
+      <header className="w-full bg-black border-b border-zinc-800">
+        <div className="w-full px-8 flex h-24 items-center justify-between">
+          <Link href="/" className="text-2xl font-bold tracking-tighter">
             JARRED TRAPP
           </Link>
-          <nav className="hidden md:flex gap-8">
+          <nav className="hidden md:flex gap-12">
             <Link href="#work" className="text-sm uppercase tracking-wider hover:text-gray-400 transition-colors">
               Work
             </Link>
@@ -30,7 +30,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="flex items-center justify-center min-h-screen relative">
+        <section className="flex items-center justify-center h-[calc(100vh-6rem)] relative">
           <div className="absolute inset-0 flex items-center justify-center">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bg-image3.jpg-nAnbOTELuJcpxvjCV60O6WcM4iIZy1.jpeg"
