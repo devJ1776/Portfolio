@@ -231,7 +231,7 @@ export default function Home() {
       <footer className="py-8 border-t border-zinc-800">
         <div className="container mx-auto max-w-6xl px-4 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">© {new Date().getFullYear()} Jarred Trapp. All rights reserved.</p>
-          <p className="text-sm text-gray-500">UI Developer & Designer</p>
+          <p className="text-sm text-gray-500">WebDeveloper & UI Designer</p>
         </div>
       </footer>
     </div>
