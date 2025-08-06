@@ -96,7 +96,7 @@ export function ProjectItem({ title, company, description, link, tags, index }: 
             />
           ) : title === "MATT SCHAUB WEBSITE" ? (
             <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/matt-schaub.jpg-rlA7sieFBJmeEwJ3Qk681iypmepRpz.jpeg"
+              src="/matt-schaub.jpg"
               alt={title}
               className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
             />
