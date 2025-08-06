@@ -66,12 +66,30 @@ export default function Home() {
             <h2 className="text-5xl md:text-6xl font-bold tracking-tighter mb-16">SELECTED WORK</h2>
             <div className="space-y-32">
               <ProjectItem
+                title="KARST & VON OISTE"
+                company="KARST & VON OISTE, LLP"
+                description="Designed and developed a professional law firm website for a national mesothelioma and lung cancer law practice. Created a modern, trustworthy interface that helps patients and families find legal support and information about their rights and options."
+                link="https://www.karstvonoiste.com/"
+                tags={["Web Development", "Legal Industry", "Healthcare Law", "UI/UX Design"]}
+                index={1}
+              />
+
+              <ProjectItem
+                title="GLOOP STUDIOS"
+                company="GLOOP STUDIOS"
+                description="Developed the website and branding for an independent game development studio. Created a dynamic online presence showcasing their portfolio including the 'Queen and Colony' strategy game, with modern design elements that reflect the studio's creative vision."
+                link="https://gloopstudios.com/"
+                tags={["Game Development", "Branding", "Web Design", "Creative Agency"]}
+                index={2}
+              />
+
+              <ProjectItem
                 title="PARKER'S LIST"
                 company="PARKER'S LIST"
                 description="Connecting families with autism-friendly resources, services, and support in your community. Built a comprehensive directory platform with categorized listings and user-friendly navigation."
                 link="https://parkerslist.com/"
                 tags={["UI Development", "Google Maps API", "Listing Management Admin"]}
-                index={1}
+                index={3}
               />
 
               <ProjectItem
@@ -79,7 +97,7 @@ export default function Home() {
                 company="LANGRAND AND COMPANY"
                 description="Developed and implemented for various school districts within the Greater Houston area, including Katy ISD, Aldine ISD, and Houston ISD. Built a reporting metrics tool to help establish insights and metrics for the districts' internal marketing campaigns."
                 tags={["Web Development", "Data Reporting", "Analytics"]}
-                index={2}
+                index={4}
               />
 
               <ProjectItem
@@ -87,7 +105,7 @@ export default function Home() {
                 company="LANGRAND AND COMPANY"
                 description="Created a rapid prototype for the Blue Cross/Blue Shield Welcome Kit to establish a friendlier onboarding process and clarify insurance plan details. Provided much-needed sense of security and consumer confidence."
                 tags={["Prototype", "UX Design", "Healthcare"]}
-                index={3}
+                index={5}
               />
 
               <ProjectItem
@@ -95,7 +113,7 @@ export default function Home() {
                 company="HARRIS HEALTH SYSTEMS"
                 description="Provided web development support for a proprietary LMS training project that had stalled. Coordinated with IT and senior management to deliver a working product, tested and deployed for training usage within one week."
                 tags={["LMS Development", "Consulting", "Healthcare Training"]}
-                index={4}
+                index={6}
               />
 
               <ProjectItem
@@ -103,7 +121,7 @@ export default function Home() {
                 company="CUDD ENERGY SERVICES"
                 description="Designed and built a UI framework of reusable components shared across all enterprise applications. Created a comprehensive component library for consistent user experiences."
                 tags={["UI Development", "Component Library", "Enterprise"]}
-                index={5}
+                index={7}
               />
 
               <ProjectItem
@@ -112,7 +130,7 @@ export default function Home() {
                 description="Custom dashboards and BI charting info for fleet management. Developed interactive data visualization tools for real-time monitoring and analytics."
                 link="https://cuddondemand.com/auth/login"
                 tags={["Dashboard", "Data Visualization", "Fleet Management"]}
-                index={6}
+                index={8}
               />
 
               <ProjectItem
@@ -121,7 +139,7 @@ export default function Home() {
                 description="Collaborated with a 3D Artist to oversee development and design of 3D graphics establishing a 'high tech' look and feel for an oil & gas industry company. Created website, videos, and 3D art while protecting proprietary technology."
                 link="www.ultimatesolutions-inc.com"
                 tags={["Art Direction", "3D Graphics", "Oil & Gas"]}
-                index={7}
+                index={9}
               />
 
               <ProjectItem
@@ -129,7 +147,7 @@ export default function Home() {
                 company="PERSONAL PROJECT"
                 description="Designed and created a website for NFL Quarterback Matt Schaub to serve as his personal website while he was with the Houston Texans. Created the logo icon that serves as his brand identity."
                 tags={["Branding", "Web Development", "Sports"]}
-                index={8}
+                index={10}
               />
             </div>
           </div>

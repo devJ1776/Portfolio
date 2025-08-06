@@ -40,7 +40,19 @@ export function ProjectItem({ title, company, description, link, tags, index }: 
           )}
         </div>
         <div className="w-full md:w-1/3 aspect-[4/3] bg-zinc-900 overflow-hidden">
-          {title === "PARKER'S LIST" ? (
+          {title === "KARST & VON OISTE" ? (
+            <img
+              src="/karst-von-oiste.jpg"
+              alt={title}
+              className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+            />
+          ) : title === "GLOOP STUDIOS" ? (
+            <img
+              src="/gloop-studios-logo.jpg"
+              alt={title}
+              className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+            />
+          ) : title === "PARKER'S LIST" ? (
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/parkerslist-VDuMpRiBpSmzGin9Ftivid5UqV0DPd.png"
               alt={title}
