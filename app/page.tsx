@@ -68,7 +68,7 @@ export default function Home() {
 
               <ProjectItem
                   title="PARKER'S LIST"
-                  company="PARKER'S LIST"
+                  company="LOCAL ENTREPRENEUR"
                   description="Connecting families with autism-friendly resources, services, and support in your community. Built a comprehensive directory platform with categorized listings and user-friendly navigation."
                   link="https://parkerslist.com/"
                   tags={["Google Maps API Integration", "Web Developer"]}
@@ -77,7 +77,7 @@ export default function Home() {
 
               <ProjectItem
                 title="KARST & VON OISTE"
-                company="KARST & VON OISTE, LLP"
+                company="HOUSTON LAW FIRM"
                 description="Designed and developed a professional law firm website for a national mesothelioma and lung cancer law practice. Created a modern, trustworthy interface that helps patients and families find legal support and information about their rights and options."
                 link="https://www.karstvonoiste.com/"
                 tags={["Marketing Website", "Web Developer"]}
@@ -86,7 +86,7 @@ export default function Home() {
 
               <ProjectItem
                 title="GLOOP STUDIOS"
-                company="GLOOP STUDIOS"
+                company="GAME DEVELOPMENT STUDIO"
                 description="Developed the website and branding for an independent game development studio. Created a dynamic online presence showcasing their portfolio including the 'Queen and Colony' strategy game, with modern design elements that reflect the studio's creative vision."
                 link="https://gloopstudios.com/"
                 tags={["Marketing Website", "Web Developer"]}
