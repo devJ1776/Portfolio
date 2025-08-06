@@ -120,7 +120,7 @@ export default function Home() {
                 company="LANGRAND AND COMPANY"
                 description="Created a rapid prototype for the Blue Cross/Blue Shield Welcome Kit to establish a friendlier onboarding process and clarify insurance plan details. Provided much-needed sense of security and consumer confidence."
                 tags={["Microsite", "Web Developer"]}
-                index={5}
+                index={6}
                 images={[
                   { src: "/bcbs-anthem00.jpg", alt: "BCBS Anthem Welcome Kit - Overview" },
                   { src: "/bcbs-anthem01.jpg", alt: "BCBS Anthem Welcome Kit - Details" },
@@ -133,7 +133,7 @@ export default function Home() {
                 company="CUDD ENERGY SERVICES"
                 description="Designed and built a UI framework of reusable components shared across all enterprise applications. Created a comprehensive component library for consistent user experiences."
                 tags={["Enterprise Component Library", "Web Developer"]}
-                index={6}
+                index={7}
               />
 
               <ProjectItem
@@ -142,7 +142,7 @@ export default function Home() {
                 description="Custom dashboards and BI charting info for fleet management. Developed interactive data visualization tools for real-time monitoring and analytics."
                 link="https://cuddondemand.com/auth/login"
                 tags={["Enterprise Data Visualization", "Web Developer"]}
-                index={7}
+                index={8}
               />
 
               <ProjectItem
@@ -151,7 +151,7 @@ export default function Home() {
                 description="Collaborated with a 3D Artist to oversee development and design of 3D graphics establishing a 'high tech' look and feel for an oil & gas industry company. Created website, videos, and 3D art while protecting proprietary technology."
                 link="https://ultimatesolutions-inc.com"
                 tags={["Oil & Gas", "Art Direction"]}
-                index={8}
+                index={9}
               />
 
             </div>
