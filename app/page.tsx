@@ -43,7 +43,7 @@ export default function Home() {
               JARRED TRAPP
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto tracking-wide">
-              UI Developer & Designer crafting exceptional digital experiences
+              Web Developer & Creative Problem Solver
             </p>
             <div className="mt-12">
               <Button
@@ -175,41 +175,16 @@ export default function Home() {
               <div className="space-y-8">
                 <div className="space-y-6">
                   <p className="text-xl text-gray-300">
-                    I'm a seasoned UI Developer with extensive experience in designing and building enterprise software,
-                    websites, and digital experiences. My expertise spans from creating reusable component libraries to
-                    implementing complex web applications.
+                    I'm a seasoned Web Developer with extensive experience in architecting and building enterprise software,
+                   marketing websites, and digital experiences. My expertise spans from marketing firms, business owners and to
+                    implementing enterprise web applications in big corporate.
                   </p>
                   <p className="text-xl text-gray-300">
                     With a background in both design and development, I bring a unique perspective to projects, ensuring
-                    they're not only functional but also visually appealing and user-friendly.
+                    they're not only functional but also visually appealing and a user-friendly experience.
                   </p>
                 </div>
-                <div className="space-y-8">
-                  <h3 className="text-2xl font-bold tracking-tight">RECENT EXPERIENCE</h3>
-                  <div className="space-y-8">
-                    <ExperienceItem
-                      company="PARKER'S LIST"
-                      role="UI Developer"
-                      period="Recent"
-                      link="https://parkerslist.com/"
-                    />
-
-                    <ExperienceItem company="MINISTRY PASS" role="Backend KPI API Developer" period="Recent" />
-
-                    <ExperienceItem
-                      company="GLOOP STUDIOS"
-                      role="UI Developer / Design"
-                      period="Recent"
-                      link="https://gloopstudios.com/"
-                    />
-
-                    <ExperienceItem
-                      company="RPC INC / CUDD ENERGY SERVICES"
-                      role="Lead UI Developer"
-                      period="Enterprise Software Development Team"
-                    />
-                  </div>
-                </div>
+              
               </div>
             </div>
           </div>
@@ -244,34 +219,9 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="mt-16 space-y-4">
-                  <h3 className="text-lg font-medium text-gray-300">Connect with me</h3>
-                  <div className="space-y-3">
-                    <a href="#" className="block text-lg text-gray-400 hover:text-white transition-colors">
-                      LinkedIn
-                    </a>
-                    <a href="#" className="block text-lg text-gray-400 hover:text-white transition-colors">
-                      GitHub
-                    </a>
-                    <a href="#" className="block text-lg text-gray-400 hover:text-white transition-colors">
-                      Twitter
-                    </a>
-                  </div>
-                </div>
               </div>
 
-              <div className="flex items-center justify-center">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 mx-auto rounded-full overflow-hidden border-2 border-zinc-700">
-                    <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/jarred-trapp.jpg-urJIojdAqMxOTCDGgnUtKUomyZiW7x.jpeg"
-                      alt="Jarred Trapp"
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <p className="text-gray-400">Ready to discuss your next project</p>
-                </div>
-              </div>
+             
             </div>
           </div>
         </section>

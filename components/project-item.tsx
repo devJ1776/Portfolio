@@ -123,6 +123,12 @@ export function ProjectItem({ title, company, description, link, tags, index, im
               alt={title}
               className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
             />
+          ) : title === "TIRE APPOINTMENTS" ? (
+            <img
+              src="/tireapp.jpg"
+              alt={title}
+              className="w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+            />
           ) : (
             <img
               src={`/modern-ui-concept.png?height=400&width=600&query=UI project ${title}`}
