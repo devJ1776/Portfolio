@@ -21,14 +21,14 @@ export function ImageViewer({ images, open, onOpenChange }: ImageViewerProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-5xl p-0 bg-black/95 border-zinc-800">
+      <DialogContent className="max-w-7xl !p-0 !rounded-none bg-black/95 border-zinc-800" showCloseButton={false}>
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 text-white/70 hover:text-white transition-colors"
+          className="absolute right-4 top-4 z-50 text-white/70 hover:text-white transition-colors"
         >
           <X className="h-6 w-6" />
         </button>
-        <div className="relative aspect-[16/9] w-full">
+        <div className="relative aspect-[16/9] w-full h-[80vh]">
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
