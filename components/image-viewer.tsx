@@ -1,6 +1,9 @@
+"use client"
+
 import { useState } from "react"
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog"
 import { ChevronLeft, ChevronRight, X } from "lucide-react"
+import { cn } from "@/lib/utils"
 
 interface ImageViewerProps {
   images: { src: string; alt: string }[]
@@ -21,18 +24,25 @@ export function ImageViewer({ images, open, onOpenChange }: ImageViewerProps) {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-7xl !p-0 !rounded-none bg-black/95 border-zinc-800" showCloseButton={false}>
+      <DialogContent 
+        className={cn(
+          "max-w-7xl !p-0 !rounded-none bg-black/95 border-zinc-800",
+          "fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[95vw] max-h-[90vh]"
+        )} 
+        showCloseButton={false}
+      >
+        <DialogTitle className="sr-only">Image Gallery</DialogTitle>
         <button
           onClick={() => onOpenChange(false)}
           className="absolute right-4 top-4 z-50 text-white/70 hover:text-white transition-colors"
         >
           <X className="h-6 w-6" />
         </button>
-        <div className="relative aspect-[16/9] w-full h-[80vh]">
+        <div className="relative w-full h-[90vh] flex items-center justify-center">
           <img
             src={images[currentIndex].src}
             alt={images[currentIndex].alt}
-            className="w-full h-full object-contain"
+            className="max-w-full max-h-full object-contain"
           />
           {images.length > 1 && (
             <>
