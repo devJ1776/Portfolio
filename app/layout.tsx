@@ -8,10 +8,10 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Jarred Trapp | UI Developer & Designer",
+  title: "Jarred Trapp | FullStack Developer",
   description:
-    "Portfolio of Jarred Trapp, a UI Developer and Designer specializing in enterprise applications and websites.",
-    generator: 'v0.dev'
+    "Portfolio of Jarred Trapp, a specializing in enterprise applications and marketingwebsites.",
+ 
 }
 
 export default function RootLayout({
